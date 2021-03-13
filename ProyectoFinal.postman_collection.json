@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "f11be8e7-a4bf-4f72-853d-d424bb839abb",
+		"name": "ProyectoFinal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/registerUser/604bffee0e94fc4140c92b7c",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "palma22",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registerUser/604bffee0e94fc4140c92b7c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registerUser",
+						"604bffee0e94fc4140c92b7c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "Pedro1234",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "Pedro1234",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZjA5OTA5ZmM4NjQyNTA1ODNlMjAiLCJuYW1lIjoiUGVkcm8xMjMiLCJyb2xlIjowLCJpYXQiOjE2MTU1OTEwMDAsImV4cCI6MTYxNjAyMzAwMH0.YYm8cin_XP25uc3Gi7spS3YIhusLrUzQXJEqnOPbwlY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "604bf09909fc864250583e20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/deleteUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/updateUser/604bf0d909fc864250583e21",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZjBkOTA5ZmM4NjQyNTA1ODNlMjEiLCJuYW1lIjoiUGVkcm8xMjM0Iiwicm9sZSI6MSwiaWF0IjoxNjE1NTk0Mzk4LCJleHAiOjE2MTYwMjYzOTh9.JIb_3oL1zmfBIU0DF2lUgiB7Sgc8JeRqYLGEWyCYrPA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "Pablo22",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/updateUser/604bf0d909fc864250583e21",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"updateUser",
+						"604bf0d909fc864250583e21"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
