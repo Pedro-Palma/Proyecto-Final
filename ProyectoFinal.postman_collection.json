@@ -94,7 +94,7 @@
 					"urlencoded": [
 						{
 							"key": "user",
-							"value": "Pedro1234",
+							"value": "Pablo22",
 							"type": "text"
 						},
 						{
@@ -180,7 +180,8 @@
 						{
 							"key": "role",
 							"value": "1",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
@@ -194,6 +195,323 @@
 						"api",
 						"updateUser",
 						"604bf0d909fc864250583e21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/registerCategory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZjBkOTA5ZmM4NjQyNTA1ODNlMjEiLCJuYW1lIjoiUGFibG8yMiIsInJvbGUiOjAsImlhdCI6MTYxNTYyMDYzMCwiZXhwIjoxNjE1OTY2MjMwfQ.cg1F_V84_gbV08o96vMGMaOCeppVpi-jY-gLUjefS6k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Por Defecto",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "productos sin categoria",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registerCategory",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registerCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/listCategories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZjBkOTA5ZmM4NjQyNTA1ODNlMjEiLCJuYW1lIjoiUGFibG8yMiIsInJvbGUiOjAsImlhdCI6MTYxNTYyMDYzMCwiZXhwIjoxNjE1OTY2MjMwfQ.cg1F_V84_gbV08o96vMGMaOCeppVpi-jY-gLUjefS6k",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/listCategories",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"listCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/updateCategory",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZjBkOTA5ZmM4NjQyNTA1ODNlMjEiLCJuYW1lIjoiUGFibG8yMiIsInJvbGUiOjAsImlhdCI6MTYxNTYyMDYzMCwiZXhwIjoxNjE1OTY2MjMwfQ.cg1F_V84_gbV08o96vMGMaOCeppVpi-jY-gLUjefS6k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Lacteos",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "productos de la vaca",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "604c6f129da448421817266d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/updateCategory",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"updateCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/registerProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZjBkOTA5ZmM4NjQyNTA1ODNlMjEiLCJuYW1lIjoiUGFibG8yMiIsInJvbGUiOjAsImlhdCI6MTYxNTYyMDYzMCwiZXhwIjoxNjE1OTY2MjMwfQ.cg1F_V84_gbV08o96vMGMaOCeppVpi-jY-gLUjefS6k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "milanesaPe",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "posta",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "604d528386285104e0ebef90",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "sold",
+							"value": "7",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registerProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registerProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/deleteCategory",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZjBkOTA5ZmM4NjQyNTA1ODNlMjEiLCJuYW1lIjoiUGFibG8yMiIsInJvbGUiOjAsImlhdCI6MTYxNTYyMDYzMCwiZXhwIjoxNjE1OTY2MjMwfQ.cg1F_V84_gbV08o96vMGMaOCeppVpi-jY-gLUjefS6k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/deleteCategory",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/updateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZjBkOTA5ZmM4NjQyNTA1ODNlMjEiLCJuYW1lIjoiUGFibG8yMiIsInJvbGUiOjAsImlhdCI6MTYxNTYyMDYzMCwiZXhwIjoxNjE1OTY2MjMwfQ.cg1F_V84_gbV08o96vMGMaOCeppVpi-jY-gLUjefS6k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "604c7bb220cf0a2ad4963b45",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Cigarro",
+							"type": "text"
+						},
+						{
+							"key": "descriprtion",
+							"value": "Malboro",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "604d9c328b8b781854c26ae2",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/listProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/listProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"listProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/listProductName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cigarro",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/listProductName",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"listProductName"
 					]
 				}
 			},
